@@ -5,7 +5,7 @@
 
 
 #Cars {
-    padding: 30px 0 60px 40px;
+    padding: 30px 0 60px 90px;
     background-image:url(prism.jpg);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .car-container {
-    
+    padding: 6px; 
     
 }
 
