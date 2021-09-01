@@ -4,3 +4,6 @@
     max-height: 72px;
     max-width: 200px;
 }
+.navbar-fixed-top {
+    top: -80px; /* you'll have to figure out the exact number here */
+  }
