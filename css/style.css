@@ -1,5 +1,6 @@
 .navbar {
     background-color: #cfdeff;
+    font-family: 'Bebas Neue', cursive;
 }
 
 
@@ -21,14 +22,19 @@
     color:ghostwhite;
 }
 
+.card{
+    margin-bottom: 40px;
+}
+
+
 .card-body{
     background-color: #cfdeff
 }
 
 .car-container {
     padding: 6px; 
-    
 }
+
 
 input[type=text], select, textarea {
     width: 100%; 
