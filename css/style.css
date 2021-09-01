@@ -103,5 +103,8 @@ footer{
     #Cars h4{
         font-size: 30px;
     }
+    #Cars {
+        padding: 0 45px;
+    }
   }
 
