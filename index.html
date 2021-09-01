@@ -20,7 +20,7 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./image/VintageCars4U-logos_black.png"></a>
+          <a class="navbar-brand" href="#"><img src="./image/VintageCars4U-logos_black1.png" width="170px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Cars</a>
+                    <a class="nav-link active" aria-current="page" href="Cars">Cars</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Enquires</a>
+                    <a class="nav-link" href="Enquires">Enquires</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -46,7 +46,7 @@
     <h1>Vintage cars for hire</h1>
     
     <!-- Car layout-->
-    <section class="container"
+    <section class="container" id="Cars">
       <h4>Listing</h4>
         <div class="row">
             <!-- Car 1 -->
@@ -99,30 +99,40 @@
         </div>
 
     <!-- Enquiry -->
-    <div class="container">
-            <form action="action_page.php">
-          
-              <label for="fname">Full Name</label>
-              <input type="text" id="fname" name="Fullname" placeholder="Your name..">
-          
-              <label for="Ea">Email Address</label>
-              <input type="text" id="Ea" name="EmailAddress" placeholder="Your email address..">
-          
-              <label for="Car">Choose a Car</label>
-              <select id="car" name="car">
-                <option value="Volkswagon Beetle">Volkswagon Beetle</option>
-                <option value="Chevy-Impala">Chevrolet Impala</option>
-                <option value="1933-Ford-Hot-Rod">Ford-Hot-Rod</option>
-                <option value="ThunderBird">Thunderbird</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div>    
+    <section class="Enquiry" id="Enquiry">
+        <form action="action_page.php">
+      <ul>
+         <li> <label for="fname">Full Name</label>
 
+          <input type="text" id="fname" name="Fullname" placeholder="Your name.."></li>
+
+       <li>   <label for="Ea">Email Address</label>
+          <input type="text" id="Ea" name="EmailAddress" placeholder="Your email address.."></li>
+
+          <li><label for="Car">Choose a Car</label>
+          <select id="car" name="car">
+            <option value="none" selected disabled hidden>-Select-</option>
+            <option value="Volkswagon Beetle">Volkswagon Beetle</option>
+            <option value="Chevy-Impala">Chevrolet Impala</option>
+            <option value="1933-Ford-Hot-Rod">Ford-Hot-Rod</option>
+            <option value="ThunderBird">Thunderbird</option>
+          </select></li>
+
+         <li> <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></li>
+
+          <li><input type="submit" value="Submit"></li>
+      </ul>
+        </form>
+    
+    <!-- Contact -->
+    <section id="Contact">
+        <p>Address: 1234 High Street Melbourne 3000</p>
+        <p>Telephone: <a href="tel:xxxxx">00000</a></p>
+        <p>Email: <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a></p>
+        
+    </div>
+
+    <footer>Copywright Munch All Rights Not Reserved :)</footer>
 </body>
 </html>
