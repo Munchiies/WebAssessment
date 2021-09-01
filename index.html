@@ -12,13 +12,17 @@
 
     <!-- CSS Style and Reset sheets -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <title>VintageCar4U</title>
 </head>
 <body>
 
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./image/VintageCars4U-logos_black1.png" width="170px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,78 +33,78 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Cars">Cars</a>
+                    <a class="nav-link active" aria-current="page" href="#Cars">Cars</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Enquires">Enquires</a>
+                    <a class="nav-link" href="#Enquiry">Enquiry</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#Contact">Contact</a>
                 </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Main Heading -->
-    <h1>Vintage cars for hire</h1>
     
     <!-- Car layout-->
-    <section class="container" id="Cars">
-      <h4>Listing</h4>
-        <div class="row">
-            <!-- Car 1 -->
-            <div class="col">
-                <div class="card" style="width: 18rem">
-                <img src="./image/Volks-Beetle.jpg" class="card-img-top" alt="Volkswagon Beetle" />
-                    <div class="card-body">
-                        <p card="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga.
-                        </p>
+    <section class="car-container" id="Cars">
+    <h1>Vintage cars for hire</h1>
+        <h4>Listing</h4>
+            <div class="row">
+                <!-- Car 1 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                    <img src="./image/Volks-Beetle.jpg" class="card-img-top" alt="Volkswagon Beetle" />
+                        <div class="card-body">
+                            <p card="text">Volkswagon Beetle</p>
+                            <p>Car type: Hatch</p>
+                            <p>Doors: 3</p>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-        
-            <!-- Car 2 -->
-            <div class="col">
-                <div class="card" style="width: 18rem">
-                <img src="./image/Chevy-Impala.jpg" class="card-img-top" alt="Chevrolet Impala"/>
-                    <div class="card-body">
-                        <p card="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga.
-                        </p>
+            
+                <!-- Car 2 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                    <img src="./image/Chevy-Impala-1.jpg" class="card-img-top" alt="Chevrolet Impala"/>
+                        <div class="card-body">
+                            <p card="text">Chevrolet Impala</p>
+                            <p>Car type: Hatch</p>
+                            <p>Doors: 2</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Car 3 -->
-            <div class="col">
-                <div class="card" style="width: 18rem">
-                <img src="./image/1933-Ford-Hot-Rod.jpg" class="card-img-top" alt="ford-hot-rod"/>
-                    <div class="card-body">
-                        <p card="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga.
-                        </p>
+                <!-- Car 3 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                    <img src="./image/1933-Ford-Hot-Rod.jpg" class="card-img-top" alt="Ford-hot-rod"/>
+                        <div class="card-body">
+                            <p card="text">Ford Hot Rod</p>
+                            <p>Car type: Coupe</p>
+                            <p>Doors: 2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem">
+                    <img src="./image/ThunderBird.jpg" class="card-img-top" alt="thunderbird"/>
+                        <div class="card-body">
+                            <p card="text">Thunderbird</p>
+                            <p>Car type: Sedan</p>
+                            <p>Doors: 3</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Car 4 -->
-            <div class="col">
-                <div class="card" style="width: 18rem">
-                <img src="./image/ThunderBird.jpg" class="card-img-top" alt="thunderbird"/>
-                    <div class="card-body">
-                        <p card="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </section>
     <!-- Enquiry -->
-    <section class="Enquiry" id="Enquiry">
+    <section class="eq-container" id="Enquiry">
         <form action="action_page.php">
+            <h4>Enquire Here</h4>
       <ul>
          <li> <label for="fname">Full Name</label>
 
@@ -118,21 +122,27 @@
             <option value="ThunderBird">Thunderbird</option>
           </select></li>
 
-         <li> <label for="subject">Subject</label>
+         <li> <label for="subject">Comments</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></li>
 
           <li><input type="submit" value="Submit"></li>
       </ul>
         </form>
+    </section>
     
     <!-- Contact -->
     <section id="Contact">
+        <h3>Vintage4U</h3>
         <p>Address: 1234 High Street Melbourne 3000</p>
-        <p>Telephone: <a href="tel:xxxxx">00000</a></p>
+        <p>Telephone: <a href="tel:xxxxxxxx">00000000</a></p>
         <p>Email: <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a></p>
         
     </div>
 
-    <footer>Copywright Munch All Rights Not Reserved :)</footer>
+    <p style="text-align: right;"><a href="#top">Back to top</a></p>
+
+    <div class="footer">
+    <footer>Copyright @Munch All Rights Not Reserved 2021 :)</footer>
+    </div>
 </body>
 </html>
